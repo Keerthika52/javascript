@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <!--objects-->
+    <script type="text/javascript">
+      /*operations done in objects in js*/
+      var Car={
+        car_brand : "Tesla",
+        car_model : "Model 3",
+        price : 350000,
+
+        teslaAutoPilot : function(){
+            document.write("<h2>This car has auto pilot model</h2>");
+        }//it is a method
+
+    }
+    Car.fuelType = "Electric";//add a new propery to the object car
+    document.write("<h2>"+Car.fuelType+"</h2>");
+    Car.price = "350000"//change the data type of property in object
+    document.write("<h2>"+typeof(Car.price)+"</h2>");
+    delete Car.price;// to delete the property of the object
+    document.write("<h2>"+Car.price+"</h2>");
+    </script>
+</body>
+</html>
