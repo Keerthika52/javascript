@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <!--objects-->
+    <script type="text/javascript">
+      /*objects in js*/
+      //first method for creating objects
+      var Car={
+        car_brand : "Tesla",
+        car_model : "Model 3",
+        price : 350000,
+
+        teslaAutoPilot : function(){
+            document.write("<h2>This car has auto pilot model</h2>");
+        }//it is a method
+
+      }//here car is an object
+       Car.teslaAutoPilot();
+       //second method to creating an object(object constructor)
+
+       function Cars(car_brand,car_model, price){
+        this.car_brand = car_brand;
+        this.car_model = car_model;
+        this.price = price;
+        this.teslaAutoPilot = function(){
+             document.write("<h2>This car has auto pilot model</h2>");
+        }
+       }
+
+       var c1 = new Cars("Audi","model 5",450000);
+       document.write("<h2>"+c1.car_brand+"</h2>");
+    </script>
+</body>
+</html>
