@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+      var choice=Number(prompt(("Enter your choice:\n1.Addition\n2.Subraction\n3.Multiplication\n4.Division\n5.PowerOf\n6.Finding Remainder")));
+      var num1 = Number(prompt("Enter first number:"));
+      var num2 = Number(prompt("Enter second number:"));
+      switch(choice){
+        case 1:
+        res=num1+num2;
+        document.write(num1+"+"+num2+"="+res);
+        break;
+        case 2:
+        res=num1-num2;
+        document.write(num1+"-"+num2+"="+res);
+        break;
+        case 3:
+        res=num1*num2;
+        document.write(num1+"*"+num2+"="+res);
+        break;
+        case 4:
+        res=num1/num2;
+        document.write(num1+"/"+num2+"="+res);
+        break;
+        case 5:
+        res=num1**num2;
+        document.write(num1+"**"+num2+"="+res);
+        break;
+        case 6:
+        res=num1%num2;
+        document.write(num1+"%"+num2+"="+res);
+        break;
+        default:
+        document.write("Enter a valid choice");
+      }
+    </script>
+</body>
+</html>
+
+      
+      
+      
+      
